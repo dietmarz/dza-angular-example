@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component , Input} from '@angular/core';
 
 @Component({
   selector: 'app-persons',
@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './persons.component.css'
 })
 export class PersonsComponent {
+  @Input() personList: string[]; // @Input: This property can be bound from outside
 
+  constructor() {
+    this.personList= [];
+  }
 }
