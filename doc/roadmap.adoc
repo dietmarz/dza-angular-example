@@ -1,0 +1,12 @@
+= Roadmap
+
+* Shows angular bindings
+
+* Create component
+
+
+== Property binding
+
+----
+ <app-persons [personList]="persons"></app-persons>
+----
